@@ -1,0 +1,321 @@
+*{
+  margin : 10;
+  padding :1px; 
+box-sizing: border-box;
+text-decoration: none;
+font-family: Verdana;
+letter-spacing: 1.5px;
+
+ }
+
+ /* responsive */
+
+@media screen and ( max-width : 100% ) {
+  .input{
+    flex-wrap: wrap;
+  }
+}
+
+:root{
+
+ --p-color: #fff;
+  --s-color: #000;
+  --b-color:rgb(0 0 0 / 18%);
+  --f-color:rgb(227 120 20);
+  --p1-color: #fff ;
+  --c1-color: #f4f6f6;
+
+}
+.dark{
+  --p-color: linear-gradient(to bottom right, red, yellow);
+  --s-color: #fff; 
+  --t-color: rgb(192 195 192);
+  --b-color: #333;
+  --f-color:#f5b041;
+  --p1-color: #fff;
+  --c1-color: rgb(30 30 30 / 95%);
+}
+
+ title{
+  
+ }
+
+header{
+  
+  }
+
+body{
+  
+  background: var();
+
+}
+
+.c-mode{
+  display: flex;
+  top: 0;
+margin-left: 97%;
+
+}
+
+.c-mode img{
+ 
+ 
+display: flex;
+  
+width: 33px;
+height: 33px;
+padding: 6px;
+border-radius: 50%;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+transition: 5s ease;
+background: ;
+}
+
+.a{
+  display: flex;
+
+}
+
+
+.b{
+  padding-top: 230px;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+}
+
+
+.login{
+   width: 360px;
+  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1),
+              0 32px 64px -48px rgba(0, 0, 0, 0.5);
+  padding: 15px 30px ;
+ font-size: 13px;
+ background: var();
+ 
+}
+
+.login header{
+  font-size : 22px;
+  font-weight: 600;
+  padding-bottom: 12px;
+ text-align: center;
+  
+  }
+
+  .login header img{
+    object-fit: cover;
+    height: 50px;
+    width: 30px;
+  }
+
+.login .form-lgn{
+  margin: 15px 0;
+}
+
+.err-view{
+  padding: 8px 10px;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  color: rgb(215 36 18);
+  background: rgb(247 17 0 / 25%);
+  text-align: center;
+  border-radius: 2px;
+}
+
+form .field{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 10px;
+    
+}
+
+form .input input
+{
+  padding: 0 10px ;
+  height: 30px;
+  width: 100%;
+  font-size: 13px;
+  border: 1px solid lightgrey;
+  outline: none;
+    border-radius: 3px;
+
+}
+
+form .input .c
+{
+  font-size: 13px;
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  color: grey;
+  transition: 0.2s;
+}
+
+form input:focus + .c
+{
+  top: -7px;
+  background-color: #fff;
+   
+   
+}
+
+form input:focus
+{
+  border: none;
+  border: 1px solid lightgrey;
+}
+
+form .input i
+{
+  position: absolute;
+  right: 14px;
+  top : 7px;
+  color: #909497;
+  cursor: pointer;
+}
+
+form .input i
+{
+  position: absolute;
+  right: 14px;
+  top : 7px;
+  color: #909497;
+  cursor: pointer;
+}
+
+form .input i:hover
+{
+  color: black;
+} 
+
+form .btn
+{
+  display: flex;
+margin-top: 20px;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 23px;
+}
+
+form .btn input
+{ 
+background: linear-gradient(to bottom right, rgb(255 118 0), rgb(255 188 0 / 65%));
+height: 30px;
+border-radius: 3px;
+border: none;
+font-weight: 600;
+cursor: pointer;
+ }
+
+form .btn input:focus
+{
+background-color:;
+color: whitesmoke;
+}
+
+.login .goto a 
+{
+  color : rgb(251 139 0); 
+}
+
+.login .goto a:focus
+{
+  color: #dc7633;
+}
+                  /* Sign-up section */
+.main
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:rgb(241 160 11 / 80%);
+  transition: opacity 300ms;
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+.main:target{
+  visibility: visible;
+  opacity: 1;
+}
+
+.main-form{
+  margin: 70px auto;
+box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1),
+              0 32px 64px -48px rgba(0, 0, 0, 0.5);
+  padding: 20px 25px ;
+ font-size: 13px;
+ width: 415px ;
+max-height: 100vh;
+background: #fff;
+position: relative;
+transition: all 5s ease-in-out;
+}
+
+.main .close
+{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  transition: all 300ms ;
+  font-size: 20px;
+  color: #333;
+}
+.main form .name
+{
+  display: flex;
+}
+.main form .name .input:first-child 
+{
+  margin-right: 10px;
+}
+
+.main form .gen{
+  margin-top: 5px;
+display: flex;
+column-gap: 40px;
+margin-bottom: 10px;
+}
+
+form :where(.gen input, .gen label)
+{
+  cursor: pointer;
+}
+
+.gen input
+{
+
+  accent-color: currentColor;
+}
+
+form .img input
+{
+ color: #909497;
+ margin-top: 5px;
+}
+
+.main .goto a 
+{
+  transition: all 0.5s ease-out;
+  color : #f59b0c; 
+}
+
+.main .goto a:focus
+{
+  color: #dc7633;
+}
+
+h6
+{
+  font-size: 9px ;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
